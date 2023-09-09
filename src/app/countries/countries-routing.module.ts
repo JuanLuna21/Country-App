@@ -30,6 +30,11 @@ const routes : Routes = [
         component: CountryPageComponent,
     },
 
+    {
+        path: '**',
+        redirectTo: 'by-Capital',
+    },
+
 ]
 
 @NgModule({
