@@ -22,6 +22,11 @@ const routes: Routes = [
     },
 
     {
+        path: 'countries',
+        loadChildren: () =>  import ('./countries/countries.module').then( m => m.CountriesModule ) //LazyLoad
+    },
+
+    {
         path: '**',
         redirectTo: '',
     },
