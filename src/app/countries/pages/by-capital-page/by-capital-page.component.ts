@@ -12,9 +12,7 @@ export class ByCapitalPageComponent {
 
   public countries: Country[] = [];
 
-  constructor (private countriesService : CountriesService) {
-
-  }
+  constructor (private countriesService: CountriesService) {}
 
   searchByCapital( term: string ): void{
 
