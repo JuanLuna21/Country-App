@@ -28,7 +28,7 @@ export class SearchBoxComponent implements OnInit{
       this.onDebounce.emit( value );
    })
   }
-
+  
 
 public emitValue( value:string ):void{  
     this.OnValue.emit ( value );
